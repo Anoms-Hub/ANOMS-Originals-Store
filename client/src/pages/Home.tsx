@@ -328,34 +328,50 @@ export default function Home() {
               </form>
             </Card>
 
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
               <div>
-                <p className="text-sm text-muted-foreground mb-2">Email</p>
+                <p className="text-sm text-muted-foreground mb-3 font-display">EMAIL</p>
                 <a
-                  href="mailto:eliza@anomoriginals.com"
-                  className="font-mono text-primary hover:glow-cyan transition"
+                  href="mailto:helloanomoriginals@gmail.com"
+                  className="font-mono text-sm text-primary hover:glow-cyan transition break-all"
                 >
                   helloanomoriginals@gmail.com
                 </a>
               </div>
               <div>
-                <p className="text-sm text-muted-foreground mb-2">Follow</p>
-                <div className="flex gap-4 justify-center">
-                  <a href="#" className="text-primary hover:text-secondary transition">
+                <p className="text-sm text-muted-foreground mb-3 font-display">FOLLOW</p>
+                <div className="flex gap-3 justify-center flex-wrap">
+                  <a href="https://www.facebook.com/anom247" target="_blank" rel="noopener noreferrer" className="text-primary hover:glow-cyan transition text-sm">
+                    Facebook
+                  </a>
+                  <a href="#" className="text-primary hover:text-secondary transition text-sm">
                     Instagram
                   </a>
-                  <a href="#" className="text-primary hover:text-secondary transition">
-                    Substack
+                  <a href="#" className="text-primary hover:text-secondary transition text-sm">
+                    YouTube
                   </a>
                 </div>
               </div>
               <div>
-                <p className="text-sm text-muted-foreground mb-2">Shop</p>
+                <p className="text-sm text-muted-foreground mb-3 font-display">SHOP</p>
                 <a
-                  href="#"
-                  className="font-mono text-primary hover:glow-magenta transition"
+                  href="https://anomoriginals.myspreadshop.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-mono text-sm text-primary hover:glow-magenta transition"
                 >
                   Spreadshop Store
+                </a>
+              </div>
+              <div>
+                <p className="text-sm text-muted-foreground mb-3 font-display">SUBSCRIBE</p>
+                <a
+                  href="https://substack.com/@anomorig"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-mono text-sm text-primary hover:text-secondary transition"
+                >
+                  Substack Newsletter
                 </a>
               </div>
             </div>
