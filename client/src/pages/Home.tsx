@@ -1,9 +1,11 @@
+import { useAuth } from "@/_core/hooks/useAuth";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, ExternalLink, Heart } from "lucide-react";
 import { useState } from "react";
+import { getLoginUrl } from "@/const";
 
 /**
  * Design Philosophy: Cyberpunk Neon Maximalism
@@ -14,6 +16,7 @@ import { useState } from "react";
  */
 
 export default function Home() {
+  const { user, isAuthenticated, logout } = useAuth();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -47,7 +50,7 @@ export default function Home() {
             />
             <span className="font-display text-lg glow-cyan">ANOM</span>
           </div>
-          <div className="flex gap-6">
+          <div className="flex gap-6 items-center">
             <a href="#services" className="text-sm hover:text-primary transition">
               Services
             </a>
@@ -57,6 +60,27 @@ export default function Home() {
             <a href="#contact" className="text-sm hover:text-primary transition">
               Contact
             </a>
+            {isAuthenticated && user ? (
+              <div className="flex items-center gap-3">
+                <span className="text-sm text-muted-foreground">Hi, {user.name}</span>
+                <Button
+                  size="sm"
+                  variant="outline"
+                  onClick={logout}
+                  className="border-secondary text-secondary hover:bg-secondary/10"
+                >
+                  Logout
+                </Button>
+              </div>
+            ) : (
+              <Button
+                size="sm"
+                className="bg-primary text-primary-foreground hover:bg-primary/80"
+                onClick={() => (window.location.href = getLoginUrl())}
+              >
+                Login
+              </Button>
+            )}
           </div>
         </div>
       </nav>
@@ -311,7 +335,7 @@ export default function Home() {
                   href="mailto:eliza@anomoriginals.com"
                   className="font-mono text-primary hover:glow-cyan transition"
                 >
-                  contact@anomoriginals.com
+                  helloanomoriginals@gmail.com
                 </a>
               </div>
               <div>
