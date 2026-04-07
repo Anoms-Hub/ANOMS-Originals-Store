@@ -36,6 +36,13 @@
       "when": 1775534872019,
       "tag": "0004_low_scorpion",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "5",
+      "when": 1775535664902,
+      "tag": "0005_tricky_supernaut",
+      "breakpoints": true
     }
   ]
 }

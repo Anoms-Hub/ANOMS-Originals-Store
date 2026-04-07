@@ -84,7 +84,7 @@ export const products = mysqlTable('products', {
   designSlug: varchar('design_slug', { length: 255 }).notNull(),
   description: text('description'),
   imageUrl: text('image_url').notNull(),
-  productType: mysqlEnum('product_type', ['tshirt', 'hoodie', 'mug', 'water_bottle', 'coffee_bottle', 'phone_case', 'sweatshirt', 'cap']).notNull(),
+  productType: mysqlEnum('product_type', ['tshirt', 'hoodie', 'mug', 'water_bottle', 'coffee_bottle', 'phone_case', 'sweatshirt', 'cap', 'pet_tshirt', 'pet_collar', 'pet_bed', 'pet_toy', 'pet_bowl', 'pet_leash', 'pet_bandana', 'pet_hoodie']).notNull(),
   price: decimal('price', { precision: 10, scale: 2 }).notNull(),
   printfulProductId: varchar('printful_product_id', { length: 255 }),
   printfulVariantId: varchar('printful_variant_id', { length: 255 }),
