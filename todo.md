@@ -31,6 +31,9 @@
 - [x] Printful API integration for automatic order fulfillment (API key configured and validated)
 - [x] Product database schema and order management
 - [x] Unit tests for Cash App payment handler (5 tests passing)
+- [x] Fixed Merch card link to point to /shop
+- [x] Changed "MERCHANDISE" to "MERCH" in services section
+- [x] Updated footer SHOP link from Spreadshop to internal /shop
 - [ ] Upload actual gallery images to CDN (currently using placeholder images)
 - [ ] Upload actual product images to CDN (currently using neon mockups)
 

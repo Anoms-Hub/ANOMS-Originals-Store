@@ -203,27 +203,29 @@ export default function Home() {
               </div>
             </Card>
 
-            {/* Merchandise Card */}
-            <Card className="bg-card border-border hover:border-yellow-500 transition group cursor-pointer overflow-hidden">
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663404343710/8vpTXzdJWtzLJPMkvmwcBn/service-merchandise-2Ma2Hb3TGhNdMBgTDPB6ts.webp"
-                  alt="Merchandise"
-                  className="w-full h-full object-cover group-hover:scale-110 transition duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />
-              </div>
-              <div className="p-6">
-                <h3 className="font-display text-xl mb-3 glow-yellow">MERCHANDISE</h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Custom apparel and products featuring your unique designs. From t-shirts to
-                  hoodies, wear your creativity.
-                </p>
-                <div className="flex items-center gap-2 text-yellow-500 text-sm font-mono">
-                  Shop Now <ExternalLink className="h-4 w-4" />
+            {/* Merch Card */}
+            <a href="/shop" className="no-underline">
+              <Card className="bg-card border-border hover:border-yellow-500 transition group cursor-pointer overflow-hidden h-full">
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663404343710/8vpTXzdJWtzLJPMkvmwcBn/service-merchandise-2Ma2Hb3TGhNdMBgTDPB6ts.webp"
+                    alt="Merch"
+                    className="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />
                 </div>
-              </div>
-            </Card>
+                <div className="p-6">
+                  <h3 className="font-display text-xl mb-3 glow-yellow">MERCH</h3>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    Custom apparel and products featuring your unique designs. From t-shirts to
+                    hoodies, wear your creativity.
+                  </p>
+                  <div className="flex items-center gap-2 text-yellow-500 text-sm font-mono">
+                    Shop Now <ExternalLink className="h-4 w-4" />
+                  </div>
+                </div>
+              </Card>
+            </a>
           </div>
         </div>
       </section>
@@ -372,12 +374,10 @@ export default function Home() {
               <div className="flex flex-col items-center justify-start">
                 <p className="text-xs md:text-sm text-muted-foreground mb-4 font-display font-bold">SHOP</p>
                 <a
-                  href="https://anomoriginals.myspreadshop.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/shop"
                   className="font-mono text-xs md:text-sm text-primary hover:glow-magenta transition"
                 >
-                  Spreadshop Store
+                  Browse Store
                 </a>
               </div>
             </div>
