@@ -339,15 +339,15 @@ export default function Home() {
               </form>
             </Card>
 
-            <div className="mt-12 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
-              <div className="flex flex-col items-center">
-                <p className="text-xs md:text-sm text-muted-foreground mb-3 font-display">SHARE</p>
-                <div className="flex justify-center">
+            <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 lg:gap-12 text-center">
+              <div className="flex flex-col items-center justify-start">
+                <p className="text-xs md:text-sm text-muted-foreground mb-4 font-display font-bold">SHARE</p>
+                <div className="flex justify-center gap-2">
                   <ShareButtons variant="compact" />
                 </div>
               </div>
-              <div className="flex flex-col items-center">
-                <p className="text-xs md:text-sm text-muted-foreground mb-3 font-display">EMAIL</p>
+              <div className="flex flex-col items-center justify-start">
+                <p className="text-xs md:text-sm text-muted-foreground mb-4 font-display font-bold">EMAIL</p>
                 <a
                   href="mailto:helloanomoriginals@gmail.com"
                   className="font-mono text-xs md:text-sm text-primary hover:glow-cyan transition break-all"
@@ -355,8 +355,8 @@ export default function Home() {
                   helloanomoriginals@gmail.com
                 </a>
               </div>
-              <div className="flex flex-col items-center">
-                <p className="text-xs md:text-sm text-muted-foreground mb-3 font-display">FOLLOW</p>
+              <div className="flex flex-col items-center justify-start">
+                <p className="text-xs md:text-sm text-muted-foreground mb-4 font-display font-bold">FOLLOW</p>
                 <div className="flex gap-2 md:gap-3 justify-center flex-wrap">
                   <a href="https://www.facebook.com/anom247" target="_blank" rel="noopener noreferrer" className="text-primary hover:glow-cyan transition text-xs md:text-sm">
                     Facebook
@@ -369,8 +369,8 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-              <div className="flex flex-col items-center">
-                <p className="text-xs md:text-sm text-muted-foreground mb-3 font-display">SHOP</p>
+              <div className="flex flex-col items-center justify-start">
+                <p className="text-xs md:text-sm text-muted-foreground mb-4 font-display font-bold">SHOP</p>
                 <a
                   href="https://anomoriginals.myspreadshop.com/"
                   target="_blank"
