@@ -122,8 +122,9 @@ export default function Home() {
                   <Button
                     variant="outline"
                     className="border-secondary text-secondary hover:bg-secondary/10"
+                    onClick={() => window.open('/Anom-Originals-Services.pdf', '_blank')}
                   >
-                    Learn More
+                    View Services PDF
                   </Button>
                 </div>
                 <div className="flex items-center gap-3">
